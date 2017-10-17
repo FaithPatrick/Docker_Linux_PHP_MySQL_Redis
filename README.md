@@ -18,7 +18,7 @@ For more operations to containers, please refer to:
     $ sudo docker-compose --help
 
 
-__Don't remember to change MySQL Password in ```docker-compose.yml```__
+__Don't forget to change MySQL Password in ```docker-compose.yml```__
 
 
 Finally check out your host and have fun.
