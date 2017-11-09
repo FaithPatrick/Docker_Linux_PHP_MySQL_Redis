@@ -1,6 +1,6 @@
 # web server
 nginx:
-  image: hub.c.163.com/library/nginx:latest
+  image: nginx:latest
   ports:
     - "80:80"
     - "443:443"
@@ -38,7 +38,7 @@ fpm:
 
 # database
 mysql:
-  image: hub.c.163.com/library/mysql:latest
+  image: mysql:latest
   ports:
     # Allow client to access 3306
     - "3306:3306"
@@ -51,7 +51,7 @@ mysql:
 
 # redis
 redis:
-  image: hub.c.163.com/library/redis:latest
+  image: redis:latest
   ports:
     - "6379:6379"
 
