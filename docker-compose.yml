@@ -44,7 +44,7 @@ mysql:
     - "3306:3306"
   volumes:
     # NOTE: your data will be stored in ./mysql
-    - ./mysql:/var/lib/mysql
+    - ./mysql/data:/var/lib/mysql
     - ./mysql/mysql.cnf:/etc/mysql/conf.d/mysql2.cnf:ro
   environment:
     - MYSQL_ROOT_PASSWORD=your_mysql_password
