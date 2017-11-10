@@ -2,7 +2,7 @@
 # See: https://hub.docker.com/_/php/
 ######
 
-FROM hub.c.163.com/library/php:7.0.20-fpm
+FROM php:7.1.11-fpm
 #RUN usermod -u 1000 www-data
 MAINTAINER Patrick95 <patrick95@foxmail.com>
 
@@ -21,5 +21,4 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install -j$(nproc) gd \
     && pecl install redis-3.1.0 \
-    && docker-php-ext-enable redis \
-
+    && docker-php-ext-enable redis
